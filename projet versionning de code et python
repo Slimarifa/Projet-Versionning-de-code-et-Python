@@ -1,0 +1,269 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPPFjnJX4x4I4mkX8AsguCT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Slimarifa/Projet-Versionning-de-code-et-Python/blob/main/projet%20versionning%20de%20code%20et%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"Création de fonction mathématique simple en Python\"\n",
+        "\n",
+        "import numpy as np\n",
+        "import numpy.polynomial.polynomial as nppol\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "x= int(input())\n",
+        "def A(x):\n",
+        "    return (x**3)-(1.5*x**2)-(6*x)+5\n",
+        "   "
+      ],
+      "metadata": {
+        "id": "Y5Cm-c2DgHnr",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "46522d51-9e76-4961-a104-205cbf61430b"
+      },
+      "execution_count": 65,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(A(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pGPinmMvep3h",
+        "outputId": "087d6aa0-5c1f-44f6-bf7b-0bf0a2bdfcfb"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "62.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= int(input(\"entrez une valeur :\" ))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GM_M-7VVeH14",
+        "outputId": "8aeeb222-2094-47f5-d357-8f82fe2ed799"
+      },
+      "execution_count": 53,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "entrez une valeur :5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"a fonction factorielle\"\n",
+        "\n",
+        "def factorielle(a):\n",
+        "   if n == 0:\n",
+        "      return 1\n",
+        "   else:\n",
+        "      F = 1\n",
+        "      for k in range(2,a+1):\n",
+        "         F = F * k\n",
+        "\n",
+        "      return F;\n",
+        "      "
+      ],
+      "metadata": {
+        "id": "23lylnl3dn10"
+      },
+      "execution_count": 54,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"la factorielle de a est \" ,factorielle(a))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZRUvI8KyeYcp",
+        "outputId": "c5eb8b16-c08c-49d3-929b-4eab06b76e29"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "la factorielle de a est  120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"Implémenter la suite de Fibonnaci\"\n",
+        "\n",
+        "def fibonacci(n):\n",
+        "    if(n <= 1):\n",
+        "        return n\n",
+        "    else:\n",
+        "        return (fibonacci(n-1) + fibonacci(n-2))\n",
+        "n = int(input(\"Entrez un nombre :\"))\n",
+        "print(\" La Suite de Fibonacci est :\")\n",
+        "for i in range(n):\n",
+        "    print(fibonacci(i))"
+      ],
+      "metadata": {
+        "id": "6jqdcV-qdu3o",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "56d4b8e5-abb7-47a6-f039-ee0cf78f23e3"
+      },
+      "execution_count": 92,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Entrez un nombre :6\n",
+            " La Suite de Fibonacci est :\n",
+            "0\n",
+            "1\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"Création de fonction comportant des modules de gestions des execption\"\n",
+        "\n",
+        "import math\n",
+        "\n",
+        "def A(x):\n",
+        "\n",
+        "        if (type(a) == str) :\n",
+        "            print (\" Il est impossible de saisir une chaine de caractére\")\n",
+        "            print (\" veuillez saisir des valeurs numérique\")\n",
+        "\n",
+        "         \n",
+        "        elif (type(a) == complex) or (type(b) == complex):\n",
+        "           print (\" Nous ne pouvons pas choisir un nombre complexe\")\n",
+        "        while (type(a) == complex):\n",
+        "              x = int(input(x,\" Veuillez saisir un nombre numérique pour x\"))      \n",
+        "        if (x < 0):\n",
+        "         print (\" nous ne pouvons pas choisir un numéro négatif\")\n",
+        "        elif (len(str(x)) > 100):\n",
+        "         print (\"la valeur que vous avez taper est supérieur à 100 unités\")\n",
+        "x= int(input(\"\"))\n",
+        "A =(x**3)-(1.5*x**2)-(6*x)+5\n",
+        "            return A(x)\n",
+        "\n",
+        "      "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O2gEJVeF17Eq",
+        "outputId": "3ca67ef5-94be-4878-bb6f-3a12fdbc4dca"
+      },
+      "execution_count": 99,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\"Implémentation de la formule Pricer d’option avec python\"\n",
+        "\n",
+        "from math import log, sqrt, pi, exp\n",
+        "from scipy.stats import norm\n",
+        "from datetime import datetime, date\n",
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "from pandas import DataFrame\n",
+        "\n",
+        "def d1(S,K,T,r,sigma):\n",
+        "    return(log(S/K)+(r+sigma**2/2.)*T)/(sigma*sqrt(T))\n",
+        "def d2(S,K,T,r,sigma):\n",
+        "    return d1(S,K,T,r,sigma)-sigma*sqrt(T)\n",
+        "def bs_call(S,K,T,r,sigma):\n",
+        "    return S*norm.cdf(d1(S,K,T,r,sigma))-K*exp(-r*T)*norm.cdf(d2(S,K,T,r,sigma))\n",
+        "  \n",
+        "def bs_put(S,K,T,r,sigma):\n",
+        "    return K*exp(-r*T)-S+bs_call(S,K,T,r,sigma)"
+      ],
+      "metadata": {
+        "id": "du7s6F3M9B4i"
+      },
+      "execution_count": 97,
+      "outputs": []
+    }
+  ]
+}
